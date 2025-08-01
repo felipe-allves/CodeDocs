@@ -1,0 +1,133 @@
+section.api-section {
+    background: linear-gradient(135deg, rgba(0, 118, 255, 0.02), rgba(121, 40, 202, 0.02));
+}
+
+section.api-section form.api-search {
+    display: flex;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto 48px;
+}
+
+section.api-section form.api-search .search-input {
+    flex: 1;
+    padding: 16px 24px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    color: var(--vercel-gray-100);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+section.api-section form.api-search .search-input:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(0, 118, 255, 0.1);
+}
+
+section.api-section form.api-search .search-input::placeholder {
+    color: var(--vercel-gray-400);
+}
+
+section.api-section form.api-search .search-button {
+    padding: 16px 24px;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+    border: none;
+    border-radius: var(--border-radius);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+section.api-section form.api-search .search-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+section.api-section form.api-search .search-button:hover::before {
+    width: 100px;
+    height: 100px;
+}
+
+section.api-section form.api-search .search-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+
+section.api-section section.api-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+section.api-section section.api-categories .api-category {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-lg);
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+section.api-section section.api-categories .api-category:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(121, 40, 202, 0.1);
+}
+
+section.api-section section.api-categories .api-category h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+section.api-section section.api-categories .api-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-purple), var(--accent-pink));
+}
+
+section.api-section section.api-categories .api-category ul {
+    list-style: none;
+}
+
+section.api-section section.api-categories .api-category li {
+    padding: 8px 0;
+    color: var(--vercel-gray-300);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    padding-left: 16px;
+}
+
+section.api-section section.api-categories .api-category li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    transition: transform 0.2s ease;
+}
+
+section.api-section section.api-categories .api-category li:hover {
+    color: var(--accent-cyan);
+    padding-left: 20px;
+}
+
+section.api-section section.api-categories .api-category li:hover::before {
+    transform: translateX(4px);
+}

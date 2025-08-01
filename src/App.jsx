@@ -5,6 +5,7 @@ import Hero from './componets/Hero/Hero'
 import Languages from './componets/Languages/languages'
 import Docs from './componets/Docs/Docs'
 import Examples from './componets/Examples/Examples'
+import Api from './componets/Api/Api'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
     <Languages/>
     <Docs/>
     <Examples/>
+    <Api/>
     </>
   )
 }
