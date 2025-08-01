@@ -1,0 +1,94 @@
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+header.header nav.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+header.header nav.nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+header.header nav.nav .logo::after{ /*Adiciona uma bolinha antes da logo*/
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-cyan);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+header.header nav.nav ul.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+header.header nav.nav ul.nav-links a{
+    color: var(--vercel-gray-300);
+    text-decoration: none;
+    font-family: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+header.header nav.nav ul.nav-links a::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+    transition: width 0.3s ease;
+}
+
+header.header nav.nav ul.nav-links a:hover::before {
+    width: 100%;
+}
+
+header.header nav.nav button.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--vercel-gray-100);
+    font-size: 24px;
+    cursor: pointer;
+}
