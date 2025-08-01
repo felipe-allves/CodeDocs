@@ -8,6 +8,7 @@ import Examples from './componets/Examples/Examples'
 import Api from './componets/Api/Api'
 import About from './componets/About/About'
 import Features from './componets/Features/Features'
+import HowItWorks from './componets/How-it-works/How-it-works'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
     <Api/>
     <About/>
     <Features/>
+    <HowItWorks/>
     </>
   )
 }
