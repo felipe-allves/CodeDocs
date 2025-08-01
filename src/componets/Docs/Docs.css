@@ -1,0 +1,95 @@
+section.docs article.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+}
+
+section.docs article.docs-grid .doc-category {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-lg);
+    padding: 40px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+section.docs article.docs-grid .doc-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-purple), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+section.docs article.docs-grid .doc-category:hover::before {
+    opacity: 1;
+}
+
+section.docs article.docs-grid .doc-category:hover{
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(121, 40, 202, 0.1);
+}
+
+section.docs article.docs-grid .doc-category .doc-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+section.docs article.docs-grid .doc-category h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+section.docs article.docs-grid .doc-category p {
+    color: var(--vercel-gray-400);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+section.docs article.docs-grid .doc-category .doc-topics {
+    list-style: none;
+}
+
+section.docs article.docs-grid .doc-category .doc-topics li {
+    padding: 8px 0;
+    color: var(--vercel-gray-300);
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    padding-left: 16px;
+}
+
+section.docs article.docs-grid .doc-category .doc-topics li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+section.docs article.docs-grid .doc-category .doc-topics li:last-child {
+    border-bottom: none;
+}
