@@ -31,32 +31,32 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Vite
 ---
 ## Projeto
-**CodeDocs** uma plataforma interativa de documentao de linguagens de programao.
+**CodeDocs** uma plataforma interativa de documentação de linguagens de programação.
 Ideal para estudantes, autodidatas e desenvolvedores que querem:
 - Aprender de forma visual e prtica
 - Consultar rapidamente APIs e exemplos reais
 - Se aprofundar em diferentes nveis (bsico ao avanado)
-A interface foi totalmente reestruturada com **React**, cada seo se tornou um
-**componente separado com seus prprios estilos**, facilitando manuteno, escalabilidade e
+A interface foi totalmente reestruturada com **React**, cada section se tornou um
+**componente separado com seus prprios estilos**, facilitando manutenção, escalabilidade e
 legibilidade.
 ---
 ## Funcionalidades
-- Navegao suave (scroll behavior)
+- Navegação suave (scroll behavior)
 - Layout 100% responsivo
-- Estilo global + mdulos separados
-- Componentizao por seo (Hero, Linguagens, Docs, API, etc)
+- Estilo global + módulos separados
+- Componentizalçao por section (Hero, Linguagens, Docs, API, etc)
 - Deploy otimizado com Vite
 ---
 ## Como Usar
  ```bash
-1. Clone o repositrio:
+1. Clone o repositório:
 
  git clone https://github.com/felipe-allves/CodeDocs
 
 2. Acesse a pasta do projeto:
  cd CodeDocs-React
 
-3. Instale as dependncias:
+3. Instale as dependências:
  npm install
  
 4. Inicie o servidor de desenvolvimento:
@@ -81,7 +81,7 @@ Feito com amor por [Felipe Alves](https://github.com/felipe-allves)
 ---
 ## Extras
 - **Status do Projeto:** Em desenvolvimento
-- **Issues:** Abertas para contribuies
-- **Licena:** MIT
+- **Issues:** Abertas para contribuições
+- **Licença:** MIT
 - **Verso em Ingls:** _Em breve_
 ---
