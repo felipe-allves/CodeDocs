@@ -1,0 +1,77 @@
+section.examples article.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+}
+
+section.examples article.examples-grid .example-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-lg);
+    padding: 32px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+section.examples article.examples-grid .example-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 118, 255, 0.1);
+}
+
+section.examples article.examples-grid .example-card .example-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+section.examples article.examples-grid .example-card .example-header .example-tag {
+    padding: 4px 12px;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+    color: white;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+section.examples article.examples-grid .example-card .example-header .example-level {
+    padding: 4px 12px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 9999px;
+    font-size: 12px;
+    color: var(--vercel-gray-300);
+}
+
+section.examples article.examples-grid .example-card .code-block {
+    background: linear-gradient(135deg, var(--vercel-gray-900), var(--vercel-gray-800));
+    border: 1px solid var(--vercel-gray-700);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: 16px 0;
+    overflow-x: auto;
+    position: relative;
+}
+
+section.examples article.examples-grid .example-card .code-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan), var(--accent-purple));
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+section.examples article.examples-grid .example-card .code-block pre {
+    margin: 0;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+ection.examples article.examples-grid .example-card .code-block code {
+    color: var(--vercel-gray-200);
+}
