@@ -19,7 +19,7 @@ function Footer () {
                     <a href="#">GitHub</a>
                 </nav>
             </section>
-            <p className="footer-copyright">&copy; 2024 CodeDocs. Conteúdo sob licença MIT.</p>
+            &copy; 2025 CodeDocs. Conteúdo sob licença <a href="/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>.
         </div>
     </footer>
     )
