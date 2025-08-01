@@ -1,0 +1,166 @@
+section.languages article.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+}
+
+section.languages article.languages-grid .language-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-lg);
+    padding: 48px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+section.languages article.languages-grid .language-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan), var(--accent-purple));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+section.languages article.languages-grid .language-card:hover::before {
+    transform: scaleX(1);
+}
+
+section.languages article.languages-grid .language-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 118, 255, 0.1);
+}
+
+section.languages article.languages-grid .language-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--accent-blue) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+section.languages article.languages-grid .language-card:hover::after {
+    opacity: 0.05;
+}
+
+section.languages article.languages-grid .language-card .language-icon {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+section.languages article.languages-grid .language-card .language-icon .icon-bg {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+}
+
+section.languages article.languages-grid .language-card .language-icon .icon-bg::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+.js-bg {
+    background: linear-gradient(135deg, #f7df1e, #f0db4f);
+}
+
+.py-bg {
+    background: linear-gradient(135deg, #3776ab, #ffd43b);
+}
+
+.react-bg {
+    background: linear-gradient(135deg, #61dafb, #282c34);
+}
+
+.ts-bg {
+    background: linear-gradient(135deg, #3178c6, #235a97);
+}
+
+.go-bg {
+    background: linear-gradient(135deg, #00add8, #007d9c);
+}
+
+.rust-bg {
+    background: linear-gradient(135deg, #dea584, #ce422b);
+}
+
+.java-bg {
+    background: linear-gradient(135deg, #ed8b00, #f89820);
+}
+
+section.languages article.languages-grid .language-card .language-icon .icon-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--vercel-gray-800);
+}
+
+section.languages article.languages-grid .language-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+section.languages article.languages-grid .language-card p {
+    color: var(--vercel-gray-400);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+section.languages article.languages-grid .language-card .language-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--vercel-gray-100);
+}
+
+section.languages article.languages-grid .language-card .language-stats {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+section.languages article.languages-grid .language-card .language-stats .stat-tag {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    font-size: 14px;
+    color: var(--vercel-gray-300);
+    transition: all 0.3s ease;
+}
+
+section.languages article.languages-grid .language-card .language-stats .stat-tag:hover {
+    background: linear-gradient(135deg, rgba(0, 118, 255, 0.2), rgba(0, 212, 255, 0.2));
+    border-color: var(--accent-blue);
+    color: var(--accent-cyan);
+}
