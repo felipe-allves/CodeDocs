@@ -7,6 +7,7 @@ import Docs from './componets/Docs/Docs'
 import Examples from './componets/Examples/Examples'
 import Api from './componets/Api/Api'
 import About from './componets/About/About'
+import Features from './componets/Features/Features'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
     <Examples/>
     <Api/>
     <About/>
+    <Features/>
     </>
   )
 }
