@@ -1,0 +1,91 @@
+footer.footer {
+  background: linear-gradient(
+    135deg,
+    var(--vercel-black),
+    var(--vercel-gray-900)
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 48px 0;
+  position: relative;
+}
+
+footer.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-blue),
+    var(--accent-cyan),
+    var(--accent-purple),
+    transparent
+  );
+}
+
+footer.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+footer.footer .footer-content aside.footer-brand h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+footer.footer .footer-content aside.footer-brand p {
+  color: var(--vercel-gray-400);
+  font-size: 14px;
+}
+
+footer.footer .footer-content .footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+footer.footer .footer-content .footer-links a {
+  color: var(--vercel-gray-400);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+footer.footer .footer-content .footer-links a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+  transition: width 0.3s ease;
+}
+
+footer.footer .footer-content .footer-links a:hover {
+    color: var(--accent-cyan);
+}
+
+footer.footer .footer-content .footer-links a:hover::before {
+    width: 100%;
+}
+
+footer.footer .footer-copyright {
+    text-align: center;
+    margin-top: 32px;
+    color: var(--vercel-gray-600);
+    font-size: 14px;
+}
+
