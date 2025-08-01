@@ -3,6 +3,7 @@ section.hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: radial-gradient(ellipse at center, var(--vercel-gray-900) 0%, var(--vercel-black) 100%);
     overflow: hidden;
 }

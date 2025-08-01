@@ -8,7 +8,7 @@ function HowItWorks () {
                 <header>
                     <h2 className="section-title" id="how-title">
                         <span className="gradient-text">Como</span>
-                        <span className="gradient-text-purple">funciona</span>
+                        <span className="gradient-text-purple"> funciona</span>
                     </h2>
                     <p className="section-subtitle">Quatro passos simples para começar sua jornada</p>
                 </header>

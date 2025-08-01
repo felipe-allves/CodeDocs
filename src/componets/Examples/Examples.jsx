@@ -12,7 +12,7 @@ function Examples() {
         <header>
           <h2 className="section-title" id="examples-title">
             <span className="gradient-text">Exemplos</span>
-            <span className="gradient-text-purple">Práticos</span>
+            <span className="gradient-text-purple"> Práticos</span>
           </h2>
           <p className="section-subtitle">
             Código real e casos de uso do dia a dia

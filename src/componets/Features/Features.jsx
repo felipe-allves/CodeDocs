@@ -8,7 +8,7 @@ function Features () {
                 <header>
                     <h2 className="section-title" id="features-title">
                         <span className="gradient-text">Recursos</span>
-                        <span className="gradient-text-purple">ilimitados</span>
+                        <span className="gradient-text-purple"> ilimitados</span>
                     </h2>
                     <p className="section-subtitle">Tudo o que você precisa para dominar qualquer linguagem de programação</p>
                 </header>

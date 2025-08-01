@@ -8,7 +8,7 @@ function About () {
                 <header>
                     <h2 className="section-title" id="about-title">
                         <span className="gradient-text">Sobre</span>
-                        <span className="gradient-text-purple">o CodeDocs</span>
+                        <span className="gradient-text-purple"> o CodeDocs</span>
                     </h2>
                 </header>
                 <article className="about-content">

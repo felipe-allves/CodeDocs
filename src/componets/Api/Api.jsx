@@ -8,7 +8,7 @@ function Api () {
                 <header>
                     <h2 className="section-title" id="api-title">
                         <span className="gradient-text">Referências</span>
-                        <span className="gradient-text-purple">rápidas</span>
+                        <span className="gradient-text-purple"> rápidas</span>
                     </h2>
                     <p className="section-subtitle">Encontre o que precisa sem perder tempo</p>
                 </header>

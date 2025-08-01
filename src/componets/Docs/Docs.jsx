@@ -8,7 +8,7 @@ function Docs () {
                 <header>
                     <h2 className="section-title" id="docs-title">
                         <span className="gradient-text">Guias</span>
-                        <span className="gradient-text-purple">estruturados</span>
+                        <span className="gradient-text-purple"> estruturados</span>
                     </h2>
                     <p className="section-subtitle">Caminhos claros para cada nível de conhecimento</p>
                 </header>

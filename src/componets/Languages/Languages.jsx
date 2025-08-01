@@ -8,7 +8,7 @@ function Languages () {
                 <header>
                     <h2 className="section-title" id="languages-title">
                         <span className="gradient-text">Linguagens</span>
-                        <span className="gradient-text-purple">mais buscadas</span>
+                        <span className="gradient-text-purple"> mais buscadas</span>
                     </h2>
                     <p className="section-subtitle">Do básico ao avançado, tudo organizado para você avançar rápido</p>
                 </header>
